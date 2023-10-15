@@ -1,13 +1,13 @@
 def algorithm():
     input__: str = input()
     alphas = ""
-    numbers = ""
+    number = 0
     for letter in input__:
         if letter.isdigit():
-            numbers += letter
+            number += int(letter)
         else:
             alphas += letter
-    print(''.join(sorted(alphas)+sorted(numbers)))
+    print(''.join(sorted(alphas)+[str(number)]))
 
 
 algorithm()
